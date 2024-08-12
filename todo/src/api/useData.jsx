@@ -6,7 +6,7 @@ const useData = () => {
         const savedData = localStorage.getItem('todoData');
         return savedData ? JSON.parse(savedData) : [];
     })
-   
+    
     useEffect(() => {
         if (data.length === 0) {
             const getData = async () => {
